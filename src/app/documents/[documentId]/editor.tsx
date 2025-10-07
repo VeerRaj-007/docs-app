@@ -5,6 +5,8 @@ import Underline from "@tiptap/extension-underline";
 import { TaskList } from "@tiptap/extension-task-list";
 import Table from "@tiptap/extension-table";
 import Image from "@tiptap/extension-image";
+import TextStyle from "@tiptap/extension-text-style";
+import FontFamily from "@tiptap/extension-font-family";
 import ImageResize from "tiptap-extension-resize-image";
 import TableCell from "@tiptap/extension-table-cell";
 import TableHeader from "@tiptap/extension-table-header";
@@ -50,6 +52,8 @@ export const Editor = () => {
     extensions: [
       StarterKit,
       Underline,
+      FontFamily,
+      TextStyle,
       TaskItem.configure({ nested: true }),
       ImageResize,
       TaskList,
