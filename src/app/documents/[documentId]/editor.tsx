@@ -1,6 +1,7 @@
 "use client";
 
 import { TaskItem } from "@tiptap/extension-task-item";
+import Underline from "@tiptap/extension-underline";
 import { TaskList } from "@tiptap/extension-task-list";
 import Table from "@tiptap/extension-table";
 import Image from "@tiptap/extension-image";
@@ -48,6 +49,7 @@ export const Editor = () => {
     },
     extensions: [
       StarterKit,
+      Underline,
       TaskItem.configure({ nested: true }),
       ImageResize,
       TaskList,
